@@ -16,8 +16,8 @@ final List<Post> posts = [
     imageUrl: 'https://tva1.sinaimg.cn/mw690/006OBeunly1g3nzrcdlrhj30mj0f2tcu.jpg',
   ),
   Post(
-    title: 'hi!',
+    title: 'there for u!',
     author: 'cosmos',
-    imageUrl: 'http://tva1.sinaimg.cn/mw690/006OBeunly1g3nyy42hpog30cs076u14.gif'
+    imageUrl: 'https://tva1.sinaimg.cn/mw690/006OBeunly1g3nzrcdlrhj30mj0f2tcu.jpg'
   ),
 ];
