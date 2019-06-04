@@ -8,32 +8,40 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('xiaoyuu'),
-          elevation: 30.0,
-        ),
-        body: Hello(),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: Home(),
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.red,
       ),
     );
   }
 }
 
-class Hello extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'hello,flutter',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-          fontSize: 40.0,
-          fontWeight: FontWeight.bold,
-          color: Colors.yellow,
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: 'Navigation',
+            onPressed: () => debugPrint('helllo'),
+          ),
+          title: Text('xiaoyuu'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: () => debugPrint('search  '),
+            ),
+          ],
+          elevation: 30.0,
+          
         ),
+        body: null,
       ),
     );
   }
