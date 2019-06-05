@@ -20,7 +20,9 @@ class ContainerDemo extends StatelessWidget {
           alignment: Alignment.topCenter,
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-              Colors.indigoAccent[400].withOpacity(0.5), BlendMode.hardLight),
+            Colors.indigoAccent[400].withOpacity(0.5),
+            BlendMode.hardLight,
+          ),
         ),
       ),
 
