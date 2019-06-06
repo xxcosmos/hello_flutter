@@ -83,7 +83,7 @@ class _RegisterFormState extends State<RegisterForm> {
             width: double.infinity,
             child: RaisedButton(
               color: Theme.of(context).accentColor,
-              child: Text('submit', style: TextStyle(color: Colors.white)),
+              child: Text('提交', style: TextStyle(color: Colors.white)),
               elevation: 0,
               onPressed: submitRegister,
             ),

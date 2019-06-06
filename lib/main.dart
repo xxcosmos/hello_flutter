@@ -3,6 +3,7 @@ import 'package:hello_flutter/demo/bottom_navigation_bar_demo.dart';
 import 'package:hello_flutter/demo/drawer_demo.dart';
 import 'package:hello_flutter/demo/form_demo.dart';
 import 'package:hello_flutter/demo/layout_demo.dart';
+import 'package:hello_flutter/demo/material_components.dart';
 import 'package:hello_flutter/demo/navigator_demo.dart';
 import 'package:hello_flutter/demo/sliver_demo.dart';
 import './demo/listview_demo.dart';
@@ -18,14 +19,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     // home: Home(),
-      initialRoute: '/form',
+      home: Home(),
+      //initialRoute: '/',
       routes: {
-         '/': (context) => NavigatorDemo(),
-        '/form' :(context)=> FormDemo(),
-        '/about': (context) => Page(
-              title: 'about',
-            ),
+        //'/': (context) => NavigatorDemo(),
+        '/form': (context) => FormDemo(),
+        '/about': (context) => Page(title: 'about'),
+        '/material': (context) => MaterialComponents(),
       },
       theme: ThemeData(
         primarySwatch: Colors.red,
